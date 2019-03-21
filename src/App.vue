@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    	<img alt="Vue logo" src="./assets/logo.png">
+	  <div id="SearchAndClock">
+		<SearchBar />
+		<vue-clock />
+	  </div>
+		<Weather />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VueClock from '@dangvanthanh/vue-clock';
+import Weather from './components/Weather';
+import SearchBar from './components/SearchBar'
+import './css/main.css';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+	SearchBar,
+	VueClock,
+	Weather
   }
 }
+
+
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+#SearchAndClock {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: center;
+	padding: 10px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.clock{
+	border: 0px;
+	background: #35495e;
 }
 </style>

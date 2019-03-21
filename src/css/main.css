@@ -1,0 +1,56 @@
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-image: url('../assets/dawn-background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0px;
+}
+
+#app {
+	text-align: center;
+	justify-content: center;
+	color: #2c3e50;
+	font-family: 'Avenir', Helvetica, Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+div.clock__hours, div.clock__minutes, div.clock__seconds {
+	color: #42b883;
+	background: #35495e;
+	border: none;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#SearchTitle {
+	color: #35495e;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 1.4rem;
+	text-align: left;
+}
+
+#forecast_embed {
+	color: #35495e !important;
+	
+}
+
+polygon {
+	fill: #35495e !important;
+}
+
+.fe_icon {
+	color: #35495e !important;
+}
+
+#fe_current_icon {
+	color: #42b883 !important;
+}
+
+.fe_temp_bar {
+	background-color: #42b883 !important;
+}
